@@ -1,4 +1,4 @@
-# layer-shell-pyside6-bridge
+# pyside6-layer-shell
 
 > Eine native Brücke zwischen **PySide6**, **Shiboken6**, **pybind11** und **LayerShellQt** für Wayland.
 
@@ -32,6 +32,22 @@ Wayland
 ```
 
 Dadurch bleibt die eigentliche LayerShellQt-Implementierung vollständig unabhängig von Python.
+
+## Installation
+
+```bash
+git clone https://github.com/cideight/pyside6-layer-shell.git
+cd pyside6-layer-shell
+chmod +x install.sh
+./install.sh
+```
+
+## Verwendung
+
+```bash
+source .venv/bin/activate
+python examples/python/main.py
+```
 
 ---
 
@@ -69,6 +85,9 @@ examples/
 docs/
 
 CMakeLists.txt
+install.sh
+LICENSE
+requirements.txt
 ```
 
 ---

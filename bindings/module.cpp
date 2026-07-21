@@ -71,5 +71,10 @@ PYBIND11_MODULE(layer_shell_native, m)
         .def(
             "initialize_from_pointer",
             &LayerShellAdapter::initialize_from_pointer
+        )
+
+        .def(
+            "initialize_from_address",
+            &LayerShellAdapter::initialize_from_pointer
         );
 }
