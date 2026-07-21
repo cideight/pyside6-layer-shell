@@ -10,7 +10,7 @@ to_github:
     - deploy
   script:
     # Pusht den aktuellen Stand (HEAD) direkt auf den main-Branch von GitHub
-    - git push https://cideight:${GITHUB_TOKEN}@github.com/cideight/pyside6-layer-shell.git HEAD:refs/heads/main --tags
+    - git push --force-with-lease https://cideight:${GITHUB_TOKEN}@github.com/cideight/pyside6-layer-shell.git HEAD:refs/heads/main --tags
   rules:
     # Reagiert NUR, wenn das Git-Tag mit "release-" beginnt z.B. git tag release-v0.1.0
     - if: $CI_COMMIT_TAG =~ /^release-v/
